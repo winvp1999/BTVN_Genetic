@@ -93,7 +93,7 @@ void b9()
         << StudentList->PhysicsGrade << "\t"
         << StudentList->ChemistryGrade << "\t";
     
-    //StudentList = new Student(name, math_grade, physics_grade, chemistry_grade);
+    StudentList = new Student(name, math_grade, physics_grade, chemistry_grade);
 
     // cout << "\n" << StudentList -> Name << "\t"
     //     << StudentList -> MathGrade << "\t"
