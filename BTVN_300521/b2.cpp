@@ -5,7 +5,7 @@
 using namespace std;
 bool CheckSquareNumber(int x)
 {
-    for (int i = 1; i <= (int) sqrt(x); i++)
+    for (int i = 1; i <= sqrt(x); i++)
     if (i * i == x) return true;
     return false;
 }
