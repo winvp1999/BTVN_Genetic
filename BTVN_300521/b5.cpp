@@ -18,6 +18,16 @@ void Sort(float array[], int Quantity)
         array[Position] = X;
     }
 }
+void Insert(float array[], int Quantity, float X)
+{
+    int Position = Quantity - 1;
+    while (Position > 0 && X < array[Position - 1])
+    {
+        array[Position] = array[Position - 1];
+        Position--;
+    }
+    array[Position] = X;
+}
 void b5()
 {
     system("cls");
@@ -43,8 +53,7 @@ void b5()
 
     cout << "\nChen them phan tu x va sap xep lai mang :" << endl;
     
-    Array[Quantity - 1] = NumberX;
-    Sort(Array, Quantity);
+    Insert(Array, Quantity, NumberX);
 
     for (int i = 0; i < Quantity; i++) cout << Array[i] << " ";
 }
